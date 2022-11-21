@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: breakable-toy
+    name: Route_Runner
     env: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"

@@ -1,0 +1,54 @@
+head {
+    background: gradient(to right red, yellow);
+  }
+body {
+    background-image: linear-gradient(to right, #e43768, #56fbeb);
+    background-repeat: initial;
+    background-color: #0ee9d0;
+    color: #e7f1f1 !important;
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+  }
+footer {
+    text-align: center;
+    background-color: #03090b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6%;
+  }
+  .slogan {
+    font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
+    font-size: 100%;
+    text-shadow: -1px 1px 0 #000,
+  }
+  .card {
+    background-color: #b3e5e5;
+    border-radius: 15px;
+    border: 1px solid black;
+    border-color: white;
+  }
+  .top-bar {
+    color: #010303;
+    padding: 20px;
+    font-size: 150%;
+    font-family: sans-serif;
+    background-color: #c1f1f1;  
+  }
+  .button {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    background: #4be437;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.4s ease 0s;
+    color: #000000;
+  }
+  ul.right {
+    list-style-type: none;  
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 100%;
+    background-color: transparent;
+  }

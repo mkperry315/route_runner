@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: route_runner_production
-  username: route_runner
-  password: <%= ENV['ROUTE_RUNNER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

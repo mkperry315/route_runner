@@ -23,15 +23,16 @@ const UserShow = (props) => {
       getUser()
     }, [])
     // debugger
-    // let joinDate
-    // if (user.created_at) {
-    //   const date = new Date(user.created_at)
-    //   joinDate = date.toLocaleDateString()
-    // }
+    let joinDate
+    if (user.created_at) {
+      const date = new Date(user.created_at)
+      joinDate = date.toLocaleDateString()
+    }
     return (
      <div>
-        <h1>Welcome Runner, we are one your profile!</h1>
-        <h2>{user.username}</h2>
+        <h3>Welcome Runner, we are one your profile!</h3>
+        <h4>Username:{user.username}</h4>
+        <h4>Joined {joinDate}</h4>
         <h4>Location: {user.zip}</h4>
      </div>
         )

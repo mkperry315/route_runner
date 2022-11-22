@@ -1,6 +1,6 @@
-class Tracks < ActiveRecord::Migration[5.2]
+class CreateTracks < ActiveRecord::Migration[5.2]
   def change
-      create_table :trails do |t|
+      create_table :tracks do |t|
         t.string :name, null: false
         t.string :city, null: false
         t.string :zip, null: false

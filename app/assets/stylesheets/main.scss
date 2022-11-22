@@ -16,7 +16,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6%;
+    height: 4%;
   }
   .slogan {
     font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
@@ -52,3 +52,10 @@ footer {
     font-size: 100%;
     background-color: transparent;
   }
+  nav {
+    display: block;
+  }
+  .resize {
+    width: 400px;
+    height: auto;
+}

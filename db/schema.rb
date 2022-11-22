@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2022_11_17_183615) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "trails", force: :cascade do |t|
+  create_table "tracks", force: :cascade do |t|
     t.string "name", null: false
     t.string "city", null: false
     t.string "zip", null: false

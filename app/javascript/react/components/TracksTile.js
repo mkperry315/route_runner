@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const TracksTile = (props) => {
     const { track }  = props
 
-    return (
-            <div>
+    return (<>
+            <div className="card4">
                 <Link to={`/tracks/${track.id}`}>
                     <div>
                         <h2>
@@ -17,14 +17,16 @@ const TracksTile = (props) => {
                             <img className="resize"src={track.image_url} alt={`Image of ${track.name}.`}/>
                         </div>
                         <h4>
-                            {track.city}
+                            City: {track.city}
                         </h4>
                         <p>
-                            {track.zip}
+                           Zip Code: {track.zip}
                         </p>
                     </div>
                 </Link>
             </div>
+            <br/>
+            </>
     )
 }
 

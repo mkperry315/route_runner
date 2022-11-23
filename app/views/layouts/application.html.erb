@@ -10,7 +10,7 @@
 <body>
     <nav class="top-bar">
     <div class="left">
-      <h1><a href="/">Route Runners</a></h1>
+      <h1 class="card3"><a href="/">Route Runners</a></h1>
       <p class="slogan">Define your limits.</p>
     </div>
 
@@ -24,7 +24,7 @@
           <li class = "button"><%= link_to 'Sign In', new_user_session_path %></li>
         <%- end -%>
       </ul>
-         <li class = "button" <%= link_to 'User Home Page'%></li>
+        <a href= '/users/:id'> <li class = "button" <%= link_to 'User Home Page'%></li></a>
     </section>
   </nav>
 

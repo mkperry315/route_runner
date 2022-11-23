@@ -29,12 +29,28 @@ const UserShow = (props) => {
       joinDate = date.toLocaleDateString()
     }
     return (
-     <div>
-        <h3>Welcome Runner, we are one your profile!</h3>
-        <h4>Username:{user.username}</h4>
-        <h4>Joined {joinDate}</h4>
-        <h4>Location: {user.zip}</h4>
+      <>
+      <br/>
+     <div className="card4">
+        <h3>Welcome {user.username}, getting ready for a run?</h3>
+        <br/>
+        <h4>Joined: {joinDate}</h4>
+        <h4>Your Current Zip Code: {user.zip}</h4>
      </div>
+     <br/>
+     <div className="card4">
+      <h3>Reviews:</h3>
+      <br/>
+      <br/>
+     </div>
+     <br/>
+      <br/>
+     <div className="card4">
+      <h3>Favorite tracks:</h3>
+      <br/>
+      <br/>
+     </div>
+     </>
         )
     }
     export default UserShow

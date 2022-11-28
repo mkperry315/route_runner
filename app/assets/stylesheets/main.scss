@@ -1,5 +1,6 @@
+
 head {
-    background: gradient(to right red, yellow);
+    color: #000000;
   }
 body {
     background-image: url("https://attsports.com/wp-content/uploads/2019/11/eDJI_0178-1024x768.jpg");
@@ -23,12 +24,12 @@ footer {
     text-shadow: -1px 1px 0 #000,
   }
   .top-bar {
-    color: #f8f7f6;
+    color: #8ac7ea;
     padding: 20px;
     font-size: 150%;
     font-family: sans-serif;
     height: 10%;
-    background-image: url("https://www.pennington.com/-/media/Project/OneWeb/Pennington/Images/blog/seed/10-Surprising-Facts-About-Grass/grass_10surprising_opengraph.jpg");
+    background-color: #ecf2f5;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: nowrap;
@@ -44,6 +45,29 @@ footer {
     transition: 0.4s ease 0s;
     color: #000000;
   }
+  .centerButton {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    background: #8ac7ea;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.4s ease 0s;
+    color: #000000;
+    margin-left: 45% ;
+  }
+  .centerButton1 {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    background: #8ac7ea;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.4s ease 0s;
+    color: #000000;
+    margin-left: 41% ;
+  }
+ 
   ul.right {
     list-style-type: none;  
     font-family: 'Stick No Bills', sans-serif;
@@ -77,10 +101,12 @@ footer {
 }
 
 .card3{
-  background-color: #c9ed7f;
-  border-radius: 13px;
-  border: 4px solid #060504;
+  background-color: #8ac7ea;
+  border: 4px solid #064cf0;
   width: 100%;
+  margin: auto;
+  font-size: xx-large;
+  font-weight: 600;
 }
 
 .card4 {
@@ -88,10 +114,67 @@ footer {
   border-radius: 10px;
   border: 1px solid #060707;
   width: 50%;
+  text-indent: 3%;
+  align-items: center;
+  margin:auto 
+}
+.card5 {
+  background-image: url("https://cdn.statically.io/img/i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
+  border-radius: 10px;
+  border: 1px solid #060707;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  margin:auto 
+}
+.review-card{
+  background-color: #4ecdf3;
+  border-radius: 1px;
+  border: 4px solid #020100;
+  width: 70%;
   text-align: center;
   align-items: center;
   margin:auto
 }
+
 .trackIndex{
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
 }
+.review-form {
+  border-color: rgb(1, 0, 0);
+  border-style: solid;
+  background-color: #4fcafb;
+  margin-left: 18%;
+  width: 65%;
+  padding: 8px;
+  p {
+    color: rgb(1, 1, 1);
+  }
+  border-radius: 5px;
+}
+
+.review-index {
+  margin: 1rem;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.review-tile {
+  margin: 2rem;
+  width: 80%;
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem
+  }
+  p {
+    font-size: 200%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  border-color: white;
+  border-radius: 5px;
+}
+
+

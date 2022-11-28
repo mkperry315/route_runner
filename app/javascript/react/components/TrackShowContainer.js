@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react"
+import ReviewsIndexContainer from "./ReviewsIndexContainer"
 import TrackShowTile from "./TrackShowTile"
 
 const TrackShowContainer = (props) => {
-    const [track, setTrack] = useState({})
+    const [track, setTrack] = useState({
+        reviews: []
+    })
     const [errors, setErrors] = useState("")
 
     const getTrack = async () => {
@@ -20,6 +23,38 @@ const TrackShowContainer = (props) => {
             console.error(`Error in fetch: ${err.message}`)
         }
     }
+    const postNewReview = async (formPayload) => {
+        try {
+            const trackId = props.match.params.trackId
+            const response = await fetch(`/api/v1/tracks/${trackId}/reviews`, {
+                method: 'POST',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formPayload)
+            })
+            if(!response.ok) {
+                const errorMessage = `${response.status} (${response.statusText})`
+                const error = new Error(errorMessage)
+                throw(error)
+            }
+            const postedReview = await response.json()
+            if (postedReview.review) {
+                setTrack({
+                    ...track,
+                    reviews: [...track.reviews, postedReview.review]
+                })
+                return true
+            } else {
+                setErrors(postedReview.errors)
+                return false
+            }
+        } catch(err) {
+            console.error(`Error in fetch: ${err.message}`)
+        }
+    }
 
     useEffect(() => {
         getTrack()
@@ -31,6 +66,11 @@ const TrackShowContainer = (props) => {
                 key={track.id}
                 id ={track.id}
                 track={track}
+            />
+            <ReviewsIndexContainer
+                errors={errors}
+                reviews={track.reviews}
+                postNewReview={postNewReview}
             />
         </div>
     )

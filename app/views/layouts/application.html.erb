@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>RouteRunner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
-
 <body>
     <nav class="top-bar">
     <div class="left">
-      <h1 class="card3"><a href="/">Route Runners</a></h1>
+      <h1 class="card3"><a href="/">Route Runner </a></h1>
       <p class="slogan">Define your limits.</p>
     </div>
 
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <li class = "button"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
           <li class = "button"><%= link_to 'Sign Up', new_user_registration_path %></li>
           <br/>

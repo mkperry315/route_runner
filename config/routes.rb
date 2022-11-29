@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :tracks, only: [:index, :show] do
         resources :reviews, only: [:create, :destroy]
       end
+      post 'tracks/search', to: 'tracks#search'
       resources :users, only: [:show]
     end
   end

@@ -2,7 +2,6 @@ import React from 'react'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import TracksIndexContainer from './TracksIndexContainer'
 import TrackShowContainer from './TrackShowContainer'
-import TracksTile from './TracksTile'
 import UserShow from './UserShow'
 
 export const App = (props) => {

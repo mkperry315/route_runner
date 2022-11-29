@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
+import SearchBar from './SearchBar'
 import TracksTile from './TracksTile'
+
 
 
 const TracksIndexContainer = (props) => {
@@ -29,15 +31,19 @@ const TracksIndexContainer = (props) => {
         return (
             <TracksTile 
                 key={track.id}
-                id ={track.id}
                 track={track}
             />
         )
     })
 
     return (
-        
      <div className="trackIndex">
+         <br/>
+         <div className="search-bar">
+                <SearchBar 
+                    setTracks={setTracks}
+                />
+            </div>
         <br/>
     <div className="indexCard">
         <br/>

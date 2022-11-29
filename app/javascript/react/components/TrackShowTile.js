@@ -14,11 +14,11 @@ const TrackShowTile = (props) => {
                 <br/>
                 <div className="card6">
                     <h4>Track Information</h4>
-                    <li>City: {track.city}</li>
-                    <li>Area Code: {track.zip}</li>
-                    <li>Track distance: Quarter Mile </li>
+                    <h5>City {track.city}</h5>
+                    <h5>Area Code {track.zip}</h5>
+                    <h5>Track distance Quarter Mile </h5>
                     <br/>
-                    <li>Description: {track.description}</li>
+                    <h6>Description: {track.description}</h6>
                 </div>
                 
             

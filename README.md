@@ -1,24 +1,71 @@
-# README
+<h1 align="center">Route Runner</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">
+  <img src="app/assets/images/Rlogo.png" alt="Runner logo" width="100px" height="100px"/>
 
-Things you may want to cover:
+<i>Route Runner is an application that allows its users to create a profile and stay updated about there running lifestyle by allowing them to discover and review tracks they have come across in there experiences or on our app..</i>
+<br>
 
-* Ruby version
+</p>
 
-* System dependencies
+<p align="center">
+  <a href="https://route-runner.onrender.com"><strong>route-runner.onrender.com</strong></a>
+  <br>
+</p>
 
-* Configuration
+## 🚀 Programming
 
-* Database creation
+- Backend: Ruby 2.7.3, Rails 5.2.5
+- Frontend: React
+- Database: PostgreSQL
+- Third party APIs: google places, Google Maps API
 
-* Database initialization
+## ▶️ Development
+Prerequisite: have Yarn installed, and Ruby version 2.7.3.
 
-* How to run the test suite
+1. Clone the repository
+    ```sh
+    git clone "https://github.com/mkperry315/route_runner"
+    ```
+    
+2. Install Ruby gems
+    ```sh
+    bundle exec bundle install
+    ```
+    
+3. Install Packages with Yarn
+    ```sh
+    yarn install
+    ```
+    
+4. Start Ruby server
+    ```sh
+    rails server
+    ```
+    
+5. Start webpack-dev-server
+    ```sh
+    yarn run start
+    ```
+    
+6. Open the development site **[localhost:3000](http://localhost:3000)**
+    
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+Any contributions you make are **greatly appreciated**.
 
-* Deployment instructions
+1. Clone the Project
+2. Create your Feature Branch (`git checkout -b feature-contributing main`)
+3. Commit your Changes (`git commit -m 'contribute to new feature'`)
+4. Push to the Branch (`git push origin head`)
+5. Open a Pull Request
 
-* ...
+## 👨‍💻 Author
+
+Connect with the developer.
+
+- [LinkedIn][https://www.linkedin.com/in/matthew-perry-k/]
+- [Email][Mattlax315@gmail.com]
+- [GitHub][github.com/mkperry315/route_runner]
+

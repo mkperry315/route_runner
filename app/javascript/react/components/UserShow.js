@@ -67,6 +67,7 @@ const UserShow = (props) => {
       <Link to={`/tracks/1`}><div className="card5">EBHS Track</div></Link>
       <br/>
       <Link to={`/tracks/2`}><div className="card5">SouthEastern Voc Track</div></Link>
+      <br/>
      </div>
      </>
         )

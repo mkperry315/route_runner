@@ -36,12 +36,16 @@ const TracksIndexContainer = (props) => {
     })
 
     return (
+        
      <div className="trackIndex">
+        <br/>
+    <div className="indexCard">
         <br/>
       <h1 className="card2">Local Tracks</h1>
         <br/>
       {tracksList}
      </div> 
+    </div>
     
     )
 }

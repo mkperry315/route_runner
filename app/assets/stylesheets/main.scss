@@ -1,17 +1,18 @@
 
 head {
-    color: #000000;
+    color: #fbf8f8;
   }
 body {
-    background-image: url("https://attsports.com/wp-content/uploads/2019/11/eDJI_0178-1024x768.jpg");
+    background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
+    
     background-size: cover;
-    background-color: #191d1c;
+    background-color: #f6faf9;
     font-family: sans-serif;
     margin-bottom: 3rem;
   }
 footer {
     text-align: center;
-    background-color: #03090b;
+    background-color: #f5f7f8;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -19,12 +20,14 @@ footer {
     height: 4%;
   }
   .slogan {
+    color: #f6faf9;
     font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
     font-size: 100%;
-    text-shadow: -1px 1px 0 #000,
+    text-shadow: -1px 1px 0 rgb(255, 255, 255),
   }
   .top-bar {
-    color: #8ac7ea;
+    background-image: url("https://wallpaper.dog/large/963609.jpg");
+    background-size: cover;
     padding: 20px;
     font-size: 150%;
     font-family: sans-serif;
@@ -35,20 +38,38 @@ footer {
     flex-wrap: nowrap;
     flex-direction: row; 
   }
+  .formButton {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    background: #8ac7ea;
+    padding: 13px;
+    border-radius: 40px;
+    transition: 0.4s ease 0s;
+    color: #000000;
+    margin-bottom: 2px;
+    margin-left: 35%;
+    width: 150px;
+    height: 40px;
+    
+  }
   .button {
     font-family: 'Shadows Into Light', sans-serif;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 13px;
     background: #8ac7ea;
-    padding: 15px;
-    border-radius: 50px;
+    padding: 10px;
+    border-radius: 40px;
     transition: 0.4s ease 0s;
     color: #000000;
+    margin-bottom: 2px;
+    width: 100px;
+    height: 40px; 
   }
   .centerButton {
     font-family: 'Shadows Into Light', sans-serif;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 15px;
     background: #8ac7ea;
     padding: 15px;
     border-radius: 50px;
@@ -59,7 +80,7 @@ footer {
   .centerButton1 {
     font-family: 'Shadows Into Light', sans-serif;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 15px;
     background: #8ac7ea;
     padding: 15px;
     border-radius: 50px;
@@ -80,6 +101,19 @@ footer {
   .resize {
     width: 400px;
     height: auto;
+    border-radius: 10px;
+}
+.resizeProfile {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #030404;
+}
+.resizeShow{
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 300px;
 }
 .card {
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
@@ -91,9 +125,9 @@ footer {
 }
 
 .card2{
-  background-color: #c9ed7f;
+  background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
   border-radius: 1px;
-  border: 4px solid #020100;
+   border: 2px solid #070707;
   width: 70%;
   text-align: center;
   align-items: center;
@@ -101,19 +135,24 @@ footer {
 }
 
 .card3{
-  background-color: #8ac7ea;
+  background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
   border: 4px solid #064cf0;
-  width: 100%;
+  border-radius: 10px;
+  width: 110%;
   margin: auto;
   font-size: xx-large;
   font-weight: 600;
+  text-indent: 30px;
+
 }
 
 .card4 {
+  font-size: 15px;
   background-image: url("https://cdn.statically.io/img/i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
   border-radius: 10px;
   border: 1px solid #060707;
-  width: 50%;
+  width: 90%;
+  height: 30%;
   text-indent: 3%;
   align-items: center;
   margin:auto 
@@ -127,12 +166,58 @@ footer {
   align-items: center;
   margin:auto 
 }
-.review-card{
-  background-color: #4ecdf3;
-  border-radius: 1px;
-  border: 4px solid #020100;
+.card6 {
+  font-size: 20px;
+  background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
+  border-radius: 10px;
+  border: 1px solid #060707;
+  width: 45%;
+  text-indent: 3%;
+  align-items: center;
+  margin:auto 
+}
+
+
+.indexCard {
+  font-size: 20px;
+  background-image: url("https://wallpaper.dog/large/963609.jpg");
+  background-size: cover;
+  // border-radius: 10px;
+  border: 1px solid #060707;
   width: 70%;
-  text-align: center;
+  text-indent: 3%;
+  align-items: center;
+  margin:auto 
+}
+.showCard {
+  background-image: url("https://wallpaper.dog/large/963609.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid #060707;
+  width: 70%;
+  margin:auto 
+}
+.reviewCard {
+  margin-left:25%;
+  font-size: 20px;
+  background-image: url("https://wallpaper.dog/large/963609.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid #060707;
+  width: 55%;
+  text-indent: 3%;
+  // align-items: center;
+  margin:auto 
+  
+}
+.review-card{
+  color:black;
+  background-color: #f5f9f9;
+  border-radius: 1px;
+  border: 4px solid #067ef6;
+  width: 70%;
+  text-align: left;
+  text-indent: 15px;
   align-items: center;
   margin:auto
 }
@@ -141,11 +226,12 @@ footer {
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
 }
 .review-form {
+  text-indent: 20px;
   border-color: rgb(1, 0, 0);
   border-style: solid;
-  background-color: #4fcafb;
-  margin-left: 18%;
-  width: 65%;
+  background-color: #8cd7f4;
+  margin-left: 25%;
+  width: 50%;
   padding: 8px;
   p {
     color: rgb(1, 1, 1);
@@ -176,5 +262,43 @@ footer {
   border-color: white;
   border-radius: 5px;
 }
+.register-title {
+  font-family: 'Stick No Bills', sans-serif;
+  width: 270px;
+  line-height: 43px;
+  margin: 50px auto 20px;
+  font-size: 30px;
+  color: white;
+  color: #fffffff2;
+  text-align: center;
+  text-shadow: 3px 3px 6px black;
+}
 
+.register-title1 {
+  font-family: 'Stick No Bills', sans-serif;
+  width: 270px;
+  line-height: 43px;
+  margin: 50px auto 20px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 3px 3px 6px #000000;
+  
+}
+.textBox{
+  font-size: 14px;
+  width: 450px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
 
+.sign-in-and-up {
+  background-color: #fafafc;
+  border: 3px solid #060707;
+  margin: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 4px #000000;
+  width: 60%;
+  margin-left: 20%;
+}

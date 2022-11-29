@@ -5,30 +5,39 @@ const TrackShowTile = (props) => {
     
     return(
     <><br/>
-        <div>
-            <div className="card4">
-                <h3>Track Name: {track.name}</h3>
-                <h3>City: {track.city}</h3>
-                <h4>Zip: {track.zip}</h4>
-                <h4>Track distance: Quarter Mile per Lap </h4>
-            </div>
-            <br/>
-            <p className="card4">Description: {track.description}</p>
+                <div className="card2">
+                    <h3>Track Name: {track.name}</h3> 
+                </div>
+                <br/>
+                <img className="resizeShow"src={track.image_url} alt={`Image of ${track.name}.`}/>
+                <br/>
+                <br/>
+                <div className="card6">
+                    <h4>Track Information</h4>
+                    <li>City: {track.city}</li>
+                    <li>Area Code: {track.zip}</li>
+                    <li>Track distance: Quarter Mile </li>
+                    <br/>
+                    <li>Description: {track.description}</li>
+                </div>
+                
             
-        </div>
-        <br/>
-        <a href='/users/:id'>
+            <br/>
+            <a href='/users/:id'>
             <button   className="centerButton">
             Favorite
             </button>
         </a>
+
         <br/>
         <br/>
+
         <a href='/'>
             <button className="centerButton1">
                 Remove from Favorite
             </button>
         </a>
+        <br/>
     </>
     )
 }

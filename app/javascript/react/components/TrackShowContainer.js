@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import ReviewsIndexContainer from "./ReviewsIndexContainer"
 import TrackShowTile from "./TrackShowTile"
+import GoogleMap from "./GoogleMaps"
 
 const TrackShowContainer = (props) => {
     const [track, setTrack] = useState({
@@ -61,18 +62,27 @@ const TrackShowContainer = (props) => {
     }, [])
     
     return ( 
+        <>
+        <br/>
+        <div className="showCard">
         <div className="show-page">
             <TrackShowTile
                 key={track.id}
                 id ={track.id}
                 track={track}
             />
+             <br/>
+            <GoogleMap/>
+            <br/>
             <ReviewsIndexContainer
                 errors={errors}
                 reviews={track.reviews}
                 postNewReview={postNewReview}
             />
         </div>
+        <br/>
+        </div>
+        </>
     )
 }
 

@@ -13,7 +13,6 @@
       <h1 class="card3"><a href="/">Route Runner </a></h1>
       <p class="slogan">Define your limits.</p>
     </div>
-
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
@@ -24,7 +23,7 @@
           <li class = "button"><%= link_to 'Sign In', new_user_session_path %></li>
         <%- end -%>
       </ul>
-        <a href= '/users/:id'> <li class = "button" <%= link_to 'User Home Page'%></li></a>
+        <a href= '/users/:id'> <li class = "button" <%= link_to 'User Profile'%></li></a>
     </section>
   </nav>
 

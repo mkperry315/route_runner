@@ -8,7 +8,7 @@ const NewReviewFormTile = (props) => {
         description:''
     })
     const validateForm = () => {
-        if (![''].includes(newReview.question1)) {
+        if ([''].includes(newReview.question1)) {
             setNewReview({
                 ...newReview,
                 question1: null
@@ -42,10 +42,10 @@ const NewReviewFormTile = (props) => {
             clearForm()
         } else {
             setNewReview({
-                question1:'',
-                question2:'',
-                question3:'',
-                description:''
+                question1: holdQuestion1,
+                question2: holdQuestion2,
+                question3: holdQuestion3,
+                description: holdDescription
             })
         }
     }
@@ -60,9 +60,10 @@ const NewReviewFormTile = (props) => {
 
     return (
         <form className="review-form" onSubmit={handleSubmit}>
-            <label>
+            <h4>Like to leave a review?</h4>
+            <label >
                 <p>How was the track Condition?</p>
-                <input 
+                <input className="textBox"
                     name="question1"
                     id="question1"
                     type="text"
@@ -72,7 +73,7 @@ const NewReviewFormTile = (props) => {
             </label>
             <label>
                 <p>What time did you go?</p>
-                <input 
+                <input className="textBox"
                     name="question2"
                     id="question2"
                     type="text"
@@ -82,7 +83,7 @@ const NewReviewFormTile = (props) => {
             </label>
             <label>
                 <p>Was it busy?</p>
-                <input 
+                <input className="textBox"
                     name="question3"
                     id="question3"
                     type="text"
@@ -92,7 +93,7 @@ const NewReviewFormTile = (props) => {
             </label>
             <label>
                 <p>Open Review:</p>
-                <input 
+                <input className="textBox"
                     name="description"
                     id="description"
                     type="text"
@@ -101,7 +102,7 @@ const NewReviewFormTile = (props) => {
                 />
             </label>
 
-            <input className="button" type="submit" value="Submit Review"/>
+            <input className="formButton" type="submit" value="Submit Review"/>
         </form>
     )
 }

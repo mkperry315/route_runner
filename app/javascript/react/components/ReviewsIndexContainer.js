@@ -24,7 +24,12 @@ const ReviewsIndexContainer = (props) => {
                 postNewReview={props.postNewReview}
             />
             <br/>
+            <div className="reviewCard">
+            <br/>
+            <h1 className="card2">Tracks Reviews </h1>
+            <br/>
             {reviewsList}
+            </div>
         </div>
     )
 }

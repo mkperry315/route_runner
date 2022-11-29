@@ -1,8 +1,14 @@
-<h2>Sign up</h2>
+ <div class="register-title">
+    Sign up.
+    </div>
+    <div class="register-title1">
+    Join the Community!
+    </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
+  <div class ="textBox sign-in-and-up">
+    <div class="container">
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -23,6 +29,8 @@
 
   <div class="actions">
     <%= f.submit "Sign up" %>
+  </div>
+  </div>
   </div>
 <% end %>
 

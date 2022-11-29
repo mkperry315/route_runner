@@ -1,6 +1,13 @@
-<h2>Log in</h2>
+    <div class="register-title">
+    Log In.
+    </div>
+    <div class="register-title1">
+    See what you missed!
+    </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class ="textBox sign-in-and-up">
+    <div class="container">
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -20,6 +27,8 @@
 
   <div class="actions">
     <%= f.submit "Log in" %>
+  </div>
+  </div>
   </div>
 <% end %>
 

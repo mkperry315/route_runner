@@ -49,7 +49,7 @@ const UserShow = (props) => {
       <br/>
      <div className="card5">
         <h3>Welcome {user.username}!</h3>
-        <img className="resizeProfile"src="https://www.kindpng.com/picc/m/52-526237_avatar-profile-hd-png-download.png" alt="logo" />
+        <img className="resizeProfile"src="https://img.freepik.com/free-photo/beautiful-young-female-athlete-practicing-white-studio-background-portrait-with-shadows-sportive-fit-model-motion-action_155003-21911.jpg?w=360" alt="logo" />
         <br/>
         <h4>Joined: {joinDate}</h4>
         <h4>Your Current Zip Code: {user.zip}</h4>

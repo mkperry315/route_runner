@@ -65,6 +65,7 @@ const TrackShowContainer = (props) => {
         <>
         <br/>
         <div className="showCard">
+
         <div className="show-page">
             <TrackShowTile
                 key={track.id}

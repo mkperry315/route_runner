@@ -20,23 +20,7 @@ const TrackShowTile = (props) => {
                     <br/>
                     <h6>Description: {track.description}</h6>
                 </div>
-                
-            
             <br/>
-            <a href='/users/:id'>
-            <button   className="centerButton">
-            Favorite
-            </button>
-        </a>
-
-        <br/>
-        <br/>
-
-        <a href='/'>
-            <button className="centerButton1">
-                Remove from Favorite
-            </button>
-        </a>
         <br/>
     </>
     )

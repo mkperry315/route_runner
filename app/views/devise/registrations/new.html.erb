@@ -14,6 +14,16 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+  <div class="field" >
+    <%= f.label :username %>
+    <%= f.text_field :username, autofocus: true, autocomplete: "username"%>
+  </div>
+
+ <div class="field">
+    <%= f.label :zip %>
+    <%= f.text_field :zip, autofocus: true, autocomplete: "zip" %>
+  </div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -26,11 +36,9 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
   </div>
   </div>
+  <div class="container-name"><a class="centerButton"><button>Create New Account</button></a></div>
   </div>
 <% end %>
 

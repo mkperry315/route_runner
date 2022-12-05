@@ -1,7 +1,7 @@
 <h1 align="center">Route Runner</h1>
 
 <p align="center">
-  <img src="app/assets/images/Rlogo.png" alt="Runner logo" width="100px" height="100px"/>
+  
 
 <i>Route Runner is an application that allows its users to create a profile and stay updated about there running lifestyle by allowing them to discover and review tracks they have come across in there experiences or on our app..</i>
 <br>

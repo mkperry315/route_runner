@@ -12,13 +12,14 @@ const TrackShowTile = (props) => {
                 <img className="resizeShow"src={track.image_url} alt={`Image of ${track.name}.`}/>
                 <br/>
                 <br/>
-                <div className="card6">
-                    <h4>Track Information</h4>
-                    <h5>City {track.city}</h5>
-                    <h5>Area Code {track.zip}</h5>
-                    <h5>Track distance Quarter Mile </h5>
+                <div className="card7">
+                    <h4 className="center">Track Information</h4>
+                    <h5>City: {track.city}</h5>
+                    <h5>Area Code: {track.zip}</h5>
+                    <h5>Track distance: Quarter Mile </h5>
                     <br/>
-                    <h6>Description: {track.description}</h6>
+                    <h4 className="center">Description</h4>
+                    <h6>{track.description}</h6>
                 </div>
             <br/>
         <br/>

@@ -72,7 +72,7 @@ const TrackShowContainer = (props) => {
                 id ={track.id}
                 track={track}
             />
-             <br/>
+             
             <GoogleMap/>
             <br/>
             <ReviewsIndexContainer

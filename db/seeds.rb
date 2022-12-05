@@ -11,7 +11,6 @@ user_2 = User.create(
     password: "password",
     zip: "01235"
 )
-
 track_1 = Track.find_or_create_by(
     name: "EBHS Track", 
     city: "East Bridgewater", 

@@ -1,4 +1,6 @@
-
+a{
+  color: #000001;
+}
 head {
     color: #fbf8f8;
   }
@@ -50,7 +52,6 @@ footer {
     margin-left: 35%;
     width: 150px;
     height: 40px;
-    
   }
   .button {
     font-family: 'Shadows Into Light', sans-serif;
@@ -96,7 +97,7 @@ footer {
   }
   nav {
     display: block;
-  }
+}
   .resize {
     width: 400px;
     height: auto;
@@ -125,7 +126,7 @@ footer {
 .card1{
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
   border: 1px solid #f5f6f8;
-  border-radius: 10px;
+  border-radius: 0px;
   width: 35%;
   margin: auto;
   font-size: 17px;
@@ -134,7 +135,7 @@ footer {
 }
 .card2{
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
-  border-radius: 10px;
+  border-radius: 0px;
    border: 2px solid #070707;
   width: 55%;
   text-align: center;
@@ -174,8 +175,18 @@ footer {
 .card6 {
   font-size: 20px;
   background-image: url("https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000");
-  border-radius: 10px;
-  border: 1px solid #060707;
+  border-radius: 0px;
+  border: 2px solid #060707;
+  width: 45%;
+  text-indent: 3%;
+  align-items: center;
+  margin:auto 
+}
+.card7 {
+  font-size: 20px;
+  background-image: url("https://wallpaper.dog/large/11032562.jpg");
+  border-radius: 0px;
+  border: 2px solid #060707;
   width: 45%;
   text-indent: 3%;
   align-items: center;
@@ -183,7 +194,7 @@ footer {
 }
 .indexCard {
   font-size: 20px;
-  background-image: url("https://wallpaper.dog/large/963609.jpg");
+  background-image: url("https://t4.ftcdn.net/jpg/01/60/70/77/360_F_160707703_naiEdeAJ4dcfTiis2rYUHqkk3FbJC2Fq.jpg");
   background-size: cover;
   // border-radius: 10px;
   border: 1px solid #060707;
@@ -193,7 +204,7 @@ footer {
   margin:auto 
 }
 .showCard {
-  background-image: url("https://wallpaper.dog/large/963609.jpg");
+  background-image: url("https://t4.ftcdn.net/jpg/01/60/70/77/360_F_160707703_naiEdeAJ4dcfTiis2rYUHqkk3FbJC2Fq.jpg");
   background-size: cover;
   border-radius: 10px;
   border: 1px solid #060707;
@@ -322,4 +333,12 @@ footer {
 }
 .search {
   color: #067ef6;
+}
+.center{
+  margin-left: 30%;
+}
+
+h6{
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
